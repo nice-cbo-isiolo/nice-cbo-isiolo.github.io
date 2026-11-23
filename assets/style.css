@@ -12,3 +12,15 @@ section.pad{padding:76px 0}.soft{background:var(--cream)}.kicker{color:var(--tea
 footer{background:#0c2435;color:#d5e3e5;padding:48px 0 20px}.footgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:35px}footer h3,footer h4{color:white}footer a{display:block;color:#b7c9cd;margin:7px 0;font-size:14px}.copy{border-top:1px solid #ffffff22;margin-top:30px;padding-top:16px;font-size:12px;color:#91a8ae}
 @media(max-width:850px){.herogrid,.split,.contact{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.links{display:none;position:absolute;top:78px;left:0;right:0;background:white;padding:20px;flex-direction:column;box-shadow:0 15px 30px #12304722}.links.show{display:flex}.menu{display:block}.pillbtn{display:none}.orb{width:250px;height:250px}.footgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid,.values,.footgrid{grid-template-columns:1fr}.hero{padding:65px 0}.hero h1{font-size:43px}.cta .wrap{align-items:flex-start;flex-direction:column}.top .wrap{font-size:11px}.pad{padding:58px 0!important}}
+/* Official NICE CBO logo styling */
+.site-logo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+footer .brand img {
+    width: 65px;
+    height: 65px;
+}
