@@ -93,23 +93,29 @@
                 <div class="formcard">
                     <h2 style="font-size:28px">Send an enquiry</h2>
 
-                    <p>Complete the form and your email application will open with the details filled in.</p>
+                    <p>Complete the form below to send your message directly to the NICE CBO team.</p>
 
-                    <form id="contactform">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="29a5ac70-650e-43d2-82c3-701574401f6e">
+                        <input type="hidden" name="subject" value="New enquiry from NICE CBO website">
+                        <input type="hidden" name="from_name" value="NICE CBO Website">
+
+                        <input type="checkbox" name="botcheck" style="display:none">
 
                         <div class="field">
                             <label>Your name *</label>
-                            <input name="name" required placeholder="Full name">
+                            <input type="text" name="name" required placeholder="Full name">
                         </div>
 
                         <div class="field">
                             <label>Email address *</label>
-                            <input name="email" type="email" required placeholder="you@example.com">
+                            <input type="email" name="email" required placeholder="you@example.com">
                         </div>
 
                         <div class="field">
                             <label>Organisation (optional)</label>
-                            <input name="org" placeholder="Organisation or institution">
+                            <input type="text" name="org" placeholder="Organisation or institution">
                         </div>
 
                         <div class="field">
@@ -117,11 +123,11 @@
                             <textarea name="message" required placeholder="Write your message..."></textarea>
                         </div>
 
-                        <button class="btn" type="submit">Prepare email enquiry ↗</button>
+                        <button class="btn" type="submit">Send enquiry ↗</button>
 
                     </form>
 
-                    <p class="notice">This starter form opens the visitor’s email application. It does not store submissions online. A hosted form service can be connected later.</p>
+                    <p class="notice">Your enquiry will be submitted through our online form service to the NICE CBO contact email. Please provide a valid email address so our team can respond.</p>
                 </div>
 
             </div>
